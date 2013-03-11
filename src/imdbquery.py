@@ -1,4 +1,5 @@
 import re
+
 import terms_to_exclude_before_splitting
 import terms_to_exclude_after_splitting
 
@@ -20,7 +21,7 @@ class ImdbQuery(str):
         return ImdbQuery(r.lstrip().rstrip())
     
     def remove_non_alaphnumeric_chars(self):
-        terms = re.compile(r'[^a-zA-Z0-9]+').split(self)
+        terms = re.compile(r'[^a-zA-Z0-9\']+').split(self)
         return ImdbQuery(' '.join(terms)).lstrip().rstrip()
     
     def add_parentheses_around_years(self):
