@@ -24,8 +24,8 @@ class ImdbQuery(str):
         return ImdbQuery(' '.join(terms)).lstrip().rstrip()
     
     def add_parentheses_around_years(self):
-        regex = re.compile(r'(19|20)\d{2}')
-        return ImdbQuery(regex.sub(lambda m: '({0})'.format(m.group(0)), self))
+        regex = re.compile(r'((19|20)\d{2}).*?$')
+        return ImdbQuery(regex.sub(lambda m: '({0})'.format(m.group(1)), self))
     
     def lower(self):
         return ImdbQuery(super(ImdbQuery, self).lower())
