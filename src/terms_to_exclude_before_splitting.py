@@ -16,7 +16,15 @@ long_terms = ('XviD-ARROW',
                '2CH-aXXo',
                'iNTERNAL-FFM',
                '[Extended.Edition]',
-               '[Eng]'
+               '[Eng]',
+               'KLAXXON',
+               'VLiS',
+               'NeRoZ',
+               'ARiGOLD',
+               'PiLFER',
+               'DVDSCR',
+               'xSCR',
+               'Visionmercer'
                )
 
 short_terms = ('DTS',

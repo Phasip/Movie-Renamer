@@ -7,7 +7,10 @@ classes = ('dvdrip',
            'dxva',
            'mp4',
            'divx5',
-           'divx'
+           'divx',
+           ' tc ',
+           ' eng',
+           'swesub'
            )
 
 rips = (
@@ -25,7 +28,8 @@ rips = (
         'telecine',
         'dvdivx'
         'reencoded',
-        'lchd'
+        'lchd',
+        'h264'
         )
 
 numbers = ('x264',
